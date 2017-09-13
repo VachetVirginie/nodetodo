@@ -1,0 +1,18 @@
+{
+    "name": "NodeJS-Real-time-Todolist",
+    "version": "0.1.0",
+    "description": "A simple Real-time Todolist application that uses socket.io",
+    "author": "vivi",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "dependencies": {},
+    "license": "MIT",
+    "devDependencies": {
+        "ent": "^2.2.0",
+        "express": "^4.15.4",
+        "http": "0.0.0",
+        "socket.io": "^1.7.4"
+    }
+}
