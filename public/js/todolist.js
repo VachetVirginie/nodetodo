@@ -1,5 +1,5 @@
 // Connect to socket.io
-var socket = io.connect('http://localhost:8081');
+var socket = io.connect('http://localhost:3007');
 
 // On first connect, retrieves all tasks
 socket.on('updateTask', function(todolist) {

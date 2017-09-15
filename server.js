@@ -14,13 +14,13 @@ var index; // A kind of id
 application.use(express.static('public'))
 
 // Display the todolist and the form
-.get('app/todolist', function(request, response) {
+.get('/todolist', function(request, response) {
     response.sendFile(__dirname + '/views/index.html');
 })
 
 // Redirects to todolist homepage if wrong page is called
 .use(function(request, response, next) {
-    response.redirect('app/todolist');
+    response.redirect('/todolist');
 });
 
 
@@ -40,7 +40,7 @@ socketio.sockets.on('connection', function(socket) {
         index = todolist.length - 1;
 
         // console.log(task); // Debug task
-        // console.log(index); // Debug inde
+        // console.log(index); // Debug index
 
         // Send task to all users in real-time
         socket.broadcast.emit('addTask', { task: task, index: index });
