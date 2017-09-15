@@ -40,7 +40,7 @@ socketio.sockets.on('connection', function(socket) {
         index = todolist.length - 1;
 
         // console.log(task); // Debug task
-        // console.log(index); // Debug index
+        // console.log(index); // Debug inde
 
         // Send task to all users in real-time
         socket.broadcast.emit('addTask', { task: task, index: index });
