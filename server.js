@@ -14,7 +14,7 @@ var index; // A kind of id
 application.use(express.static('public'))
 
 // Display the todolist and the form
-.get('/todolist', function(request, response) {
+.get('app/todolist', function(request, response) {
     response.sendFile(__dirname + '/views/index.html');
 })
 
