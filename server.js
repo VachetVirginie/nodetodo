@@ -20,7 +20,7 @@ application.use(express.static('public'))
 
 // Redirects to todolist homepage if wrong page is called
 .use(function(request, response, next) {
-    response.redirect('/todolist');
+    response.redirect('app/todolist');
 });
 
 
